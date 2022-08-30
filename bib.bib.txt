@@ -1,0 +1,7 @@
+@misc{ff2,
+         author =  {Jesus Manuel Dorador-Gonzalez},
+         title = {Mecanismos de transmisión y actuadores utilizados en prótesis de mano},
+         year = 2009,
+         month = {Septiembre}
+
+    }

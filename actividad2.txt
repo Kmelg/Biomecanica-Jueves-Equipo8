@@ -1,0 +1,112 @@
+\documentclass{article}
+\setlength{\parskip}{5pt} % esp. entre parrafos
+\setlength{\parindent}{0pt} % esp. al inicio de un parrafo
+\usepackage{amsmath} % mates
+\usepackage[sort&compress,numbers]{natbib} % referencias
+\usepackage{url} % que las URLs se vean lindos
+\usepackage[top=25mm,left=20mm,right=20mm,bottom=25mm]{geometry} % margenes
+\usepackage{hyperref} % ligas de URLs
+\usepackage{graphicx} % poner figuras
+\usepackage[spanish]{babel} % otros idiomas
+\usepackage[utf8]{inputenc}
+\author{Jesus Alberto Funes Mendoza  \\
+Melissa Lizeth Galindo Reyes  \\
+Ramón Samuel Blanco Ramirez  \\
+Aída Mata Moreno  \\
+Miriam Itzel Mata Porras  \\ } % author
+\title{Actividad 2: "Prótesis de Mano"} % titulo
+\date{\today}
+
+\begin{document} % inicia contenido
+
+\maketitle % cabecera
+
+\begin{abstract} % resumen
+Este es el resumen 98%. 
+\end{abstract}
+
+\section{Introducción}\label{intro} % seccion y etiqueta
+
+ 
+Una prótesis es una extensión artificial que reemplaxa una parte faltante del cuerpo. Las hay de dos tipos, pasivas y activas; las primeras también suelen ser llamadas cosméticas ya que no tienen movimiento propio y su función es puramente estética, lás prótesis activas se clasifican a su vez en mecánicas, eléctricas, neumáticas, mioeléctricas e híbridas. Las mioeléctricas se pueden dividir en sistema de actuación, de transmisión, de control y de suspensión (Figura 1)\cite{ff2}. 
+
+\begin{figure}[ht] % figura
+    \centering
+    \includegraphics[width=80mm]{Clasificaciones.png} % archivo
+    \caption{Clasificaciones de prótesis\cite{ff2}.}
+    \label{grafica}
+\end{figure}
+
+
+\section{Desarrollo}
+\subsection{Sistema de actuación} 
+El sistema de actuacion está compuesto básicamente por los elements encargados de producir la potencia mecánica del sistema, estos eleentos son comúnmente llamados actuadores, que son disposiivos capaces de generar una fuerza apartir de líqudo , energía eléctrica o gaseosa\cite{ff2}. 
+
+
+En la actualidad se han propuesto algunos sitemas de actuación para las prótesis comerciales, prototipos en desaroolo y manos robótixas antropmórfica. Estos sistemas se diferencian unos de otros no sólo en el principio de funcionamiento, ya que hay factores muy relevantes como el ruido, cantidd de energía consumida, tamaño, peso, eficiencia, potencia alcanzada, entre otros\cite{ff2}. 
+
+Los actuadores eléctricos son los más amplicamente usados por los diseñadores de prótesis de mano porque presentan una serie de ventajas sobe los otros tipos de actudores, como alta eficiencia, gran disponibilidad y los tamaños compactos\cite{ff2}.
+
+Algunas de las ventajas de este tipo de motores son el buen rendimiento y fiabilidad, bajo costo, respuesta rápida. Por otro lado producen fricción y por consecuencia calor y ruido, generan chispas\cite{ff2}. 
+
+Los motores CD son utilizas en proyectos como "CyberHand" y "RTR II" desarrollados en la Scuola Superiore Sant'Anna; "TBM Hand" de la Universidad de Toronto; "SensorHand" de Otto pck, "MYO Electric Hand" de Centri\cite{ff2}. 
+
+\begin{figure}[h] % figura
+    \centering
+    \includegraphics[width=80mm]{Prótesis.png} % archivo
+    \caption{Algunas prótesis que utilizan motores CD\cite{ff2}.}
+    \label{grafica:dos}
+\end{figure}
+
+Los servomotores son otro tipo muy común de actuadores, a grandes rasgos consiste en un motor CD, que permite situar el eje de salida en una determinada posición angular, mediante una señal externa de control. Está fromado pr carcasa, motor, engranes que reducen la velocidad del motor y aumentan el par de salida, circuito electrónico que controla la posición de salida, potenciómetro que se utiliza como sensor para concocer la posición del eje de salida. Por lo genereal un servomotor puede girar aproximadamente 180 grados\cite{ff2}. 
+
+Las ventajas que presenta son: relativamente fácil de controlar, puede ser conectado directamente a microcontroladores, su eje puede ser llevado a una posición especifica, es eficiente. Sin embargo, algunas de sus desventajas son: que no gira de manera continua, para evitar interferencia en los circuitoselctrónicos es conveniente conectar la alimentación de los servomotores a una fuente diferente a la usada para los circuitos de control\cite{ff2}. 
+
+Son utilizados en el camplo de las prótesi en proyectos como "Gifu Hand" de la Universidad de Gifu en Japón. Desafortunadamente, al utilizar este tipo de motores se requiere que el movimiento completo del dedo se puede realizar con el giro de 180° del eje de salida del servomotor. Cuando se utiliza este actuador ya no es necesario un sistema de reducción de velocidad\cite{ff2}. 
+
+También, dentro de los motores encontrados a los ultrasónicos, en particular a los rotativos onda viajera, que son motores eléctricos formados principalmente pr 4 componentes (rotor, estator, electrodo y material piezoeléctrico). El elemento encargado en generar las microdeformaciones a partir de un nivel de voltaje es el material piezoeléctrico , éste se encuentra adherido a un electrodo que se encarga de trasmitir las señales de excitación, estos dos componentes se acoplan al estator que trasmitirá el movimientos por fricción al rotor. El principio de funcionamiento de los motores ultrasónicos de onda viajera es el de crear un movimiento elíptico enel punto de contacto entre el rotor y el estator que da lugar al movimiento del motor. Sus ventajas son: elevado par a bajas velocidades. rápida respuesta y uena parada con los que se logra una buena controlabilidad, funcionamiento silencioso, estructura simple, no le afectan campos magnéticos externos ni los genera, eficienia insensible a la miniaturización, Sin embargo, sus principales descentajas son: necesita un suministro de potncia de alta frecuencia, bajo tiempo de vida útil debido a la alta fricción entre el estator y el rotor y la caída en las características par-velocidad con el tiempo\cite{ff2}. 
+
+Estos motores son usados como actuadores  proyectos como "Utah Arm" de la empresa Motion Control y "MANUS Hand", la primera es una prótesis existente en el mercado y la segunda fue desarrollada como una mano robótica antromórfica. El uso de motores ultrasónicos en prótesis ha tenido poca aceptaicón entre los diseñadores debido principalmente a que tienen que ser alimentados por una fuente de portencia de alta precuencia, y algo que hasta la fecha es limitado es la cantidad de energía que puede ser almacenada en las baterías que llevan las prótesis\cite{ff2}. 
+
+\begin{figure}[h] % figura
+    \centering
+    \includegraphics[width=80mm]{Protesis 2.png} % archivo
+    \caption{Prótesis que utilizan como actuadores a) servomotores, b) y c) motores ultrasónicos\cite{ff2}.}
+    \label{grafica:tres}
+\end{figure}
+
+En los motores sin escobillas, a diferencia de los que pasa en un motor CD convencional, los electroimanes no se mueven, en lugar de eso, ls magnetos permanentes rotan y la armadura permnece estática. La mayor ventaja es que al no haber rozamiento entre los magnetos permanentes y la armadura genera menos calor y por lo tanto hay menor perdida de fricción, mayor vida útl, mayor eficiencia, menos peso y no produce chispas. Los proyectos más sobresalientes que hacen uso de este tipo de motores son "DLR Hand" del Centro Alemán de Investigaciones Aeroespaciales, "DLR/HIT Hand" del Centro de Investigaciones Aeroespaciales en conjunto con el Instituto de Tecnología de Harbin, China, y "Robonaut Hand" de la NASA\cite{ff2}. 
+
+En los últimos años se ha incrementado el uso de actuadores no convencionales, como en el caso de las aleaciones con memoria de forma (SMA), ue se puede considerar como actuadores eléctricos debido a que utilizan de este tipo de energía para su funcionamiento. Son aleaciones metálicas a las cuales estando a temperatura relativamnte fría se deforman mediante la accion de una carga externa,una vez retirada la carga puede regresar a la forma que tenían originalmente mediante un simple calentamiento (generalemnte se hace pasar una corriente eléctrica). Las ventajas más significativas que presenta cuando son utilzadas en prótesis son: la generación de movimientos lineales, actuador muy ligero, pueden ser manufacturadas en casi culquier forma y tamaño, tienen un alto nivel de recuperación plástica, resisten la corrosión y son estables frentea aplicaciones cíclicas. En cambio se requiere el manejo de temperaturas altas, tiene movimientos poco precisos, falta de control en el tiempo de enfriado y su eficacia energética es baja. Este actuador es utilizado en la "SBC Hand" del Instituto Tecnológico de Massachusetts\cite{ff2}. 
+
+
+\begin{figure}[h] % figura
+    \centering
+    \includegraphics[width=80mm]{protesis 3.png} % archivo
+    \caption{Manos que utilizan como actuadores a) y b) motores sin escobillas, c) SMA\cite{ff2}.}
+    \label{grafica:cuatro}
+\end{figure}
+
+
+Otro de los grandes campos son los actuadores neumáticos, que por sus características no son tan usados para la generación de potencia en prótesis ya que presentan una serie de desventajas. Uno de estos actuadores es el llamado "músculo neumático" que consiste en un tubo de goma cubierto por una red de pláctico acomodada en forma de tijera (trenzada), cuando es inflado con aire comprimido a baja presión acorta su longitud ejerciendo una fuerza en ambos extremos del tubo. Algunas de las ventajas que presenta son el bajo peso, , gran flexibilidad, ofrece movimiento lineal, las desventajas prinicplaes cuando se emplea en prótesis son un difíci control, requiere de un sistema de compresión de aire además del riesgo de posibles fugas de fluido. Los músculos neumáticos se han empleado en proyectos como "Blackfingers" desarrollado en Politécnico de Milano; y "Shadow Hand" de la Shadow Robot Company, ambosn desarrollados como manos robóticas. Con est tipo de actuadores se puede lograr movimientos suaves algo deseado por diseñadores de prótesis, aunque su implementación no se ha dado debido a las obvias razones del peso y volumen del siste de compresión de aire, ya que una de las principales cosas a tener en cuenta es el diseño de prótesis  es el peso de ésta, en vista de que el paciente tiene que cargarla la mayor parte del día\cite{ff2}. 
+
+Finalmente encontramos a los actuadores hidráulicos, que dentro del campo de las prótesis de mano son escasamente utilizados. El único proycto que a la fecha los utiliza es "FluidHand" desarrollado en la universidad de Karlsruhe que ha desarrollado a la medida tanto su bomba hidráulica de engranes externos como sus electroválvulas. La desventaja más clara  es la necesidad de un sistema de bombeo, en cambio puede proporcionar movimiento lineales y suaves. A diferencia de los actuadores neumáticos, los hidráulicos tienen mejor futuro como mecanismos de deneradores de potencia porque ocupan menos espacio y se puede lograr más potencia. Desafortunadamente los elementos existentes en el mercado como bombas y electroválvulas aun son demasiado grandes para ser utilizados, por lo que es necesario realizar el diseño a la medida, como es el caso de la FluidHand\cite{ff2}.  
+
+\begin{figure}[h] % figura
+    \centering
+    \includegraphics[width=80mm]{protesis 4.png} % archivo
+    \caption{Manos que utilizan energía neumática a) e hidráulica b)\cite{ff2}.}
+    \label{grafica:cinco}
+\end{figure}
+
+
+
+
+\section{Conclusiones}
+
+
+
+\bibliography{bib}
+\bibliographystyle{plainnat}
+
+\end{document}
